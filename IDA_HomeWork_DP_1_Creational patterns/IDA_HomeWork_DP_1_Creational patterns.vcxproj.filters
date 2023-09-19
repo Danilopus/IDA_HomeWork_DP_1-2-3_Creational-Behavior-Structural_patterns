@@ -109,7 +109,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram2.cd">
+    <None Include="ClassDiagram.cd">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

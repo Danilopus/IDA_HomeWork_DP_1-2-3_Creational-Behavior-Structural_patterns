@@ -35,7 +35,7 @@ public:
 
 
 		int fruits_collected = 0;
-	
+
 		// Алгоритм сбора плодов в соответствии со стратегией. Стратегия при использовании метода UseStrategy возращает строку
 		// для поиска определенного типа деревьев для сбора определенного вида плодов
 		for (int tree_index = 0; tree_index < current_location->size(); tree_index++)
