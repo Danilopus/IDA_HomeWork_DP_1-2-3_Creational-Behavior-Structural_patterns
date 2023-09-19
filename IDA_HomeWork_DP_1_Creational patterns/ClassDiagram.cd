@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Apple" Collapsed="true">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAAAAABAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Apple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppleTree" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAgggAAAAAABAAAAAAAABAQAAMAAIAA=</HashCode>
+      <FileName>AppleTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackPack_Player_Interface" Collapsed="true">
+    <Position X="4.5" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQCAAAAAgAAAAAAAAAAAAEAAAQA=</HashCode>
+      <FileName>BackPack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackPack_TheGame_Interface" Collapsed="true">
+    <Position X="7" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>BackPack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackPack" Collapsed="true">
+    <Position X="6" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAIAYCAAAAQgAEAAAAAggAAAECEAAA=</HashCode>
+      <FileName>BackPack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Base_Fruit" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Base_Fruit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Base_MotherPlant" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAAIAAIAA=</HashCode>
+      <FileName>Base_MotherPlant.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollectionStrategy" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollectionStrategy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollectionStrategy_Apple" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollectionStrategy_Apple.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollectionStrategy_Pear" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollectionStrategy_Pear.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fruit" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABIgAAAQAIAAAAAAAAAAAAAAAAAAAAgAAAAEEAAAA=</HashCode>
+      <FileName>Fruit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAQCAgIAACEAAAAggCAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Location_Player_Interface" Collapsed="true">
+    <Position X="17.75" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAQAAAAAAABAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Location.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Location_TheGame_Interface" Collapsed="true">
+    <Position X="15" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Location.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TreeLocation" Collapsed="true">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAACAAAAAAgAoIEYAAAQAAEBAAIAggCBAFAAAAA=</HashCode>
+      <FileName>Location.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotherPlant" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAgAIAAgAgAAAAAAABAAAAAAAAAQAAsIAIAA=</HashCode>
+      <FileName>MotherPlant.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Main_menu" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIIAABAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pear" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Pear.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PearTree" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAgAAAAAgAgAAAAAABAAAAAAAABAQAAMAAIAA=</HashCode>
+      <FileName>PearTree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAABBAgAAAAAAAAAAAAAAAAAQAAQCA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Raspberry_bush" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAgAgAACAAABAAAAAAAABAQAAMAAIAA=</HashCode>
+      <FileName>Raspberry_bush.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="raspberry" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>raspberry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="World" Collapsed="true">
+    <Position X="11.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAABAAAAAABAAABAAAAAAAAAAAAAAAABAgAAA=</HashCode>
+      <FileName>World.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldMaker" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAEQAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>WorldMaker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldMaker_AppleOnly" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorldMaker_AppleOnly.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldMaker_Pear_and_Raspberry" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorldMaker_Pear_and_Raspberry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorldMaker_tundra" Collapsed="true">
+    <Position X="13.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorldMaker_tundra.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="World_Player_Interface" Collapsed="true">
+    <Position X="11" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>World_Player_Interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CollectionStrategy_Types" Collapsed="true">
+    <Position X="15.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CollectionStrategy.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Color" Collapsed="true">
+    <Position X="15.75" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAAAAAAAAAACIEAAAAAAAAAAAAIAAAAAAABAA=</HashCode>
+      <FileName>Fruit.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WorldMaker_Strategies" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAIAAACAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WorldMaker.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

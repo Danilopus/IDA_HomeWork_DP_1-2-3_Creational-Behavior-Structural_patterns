@@ -29,90 +29,31 @@
 //My own headers
 #include "Service functions.h"
 #include "MainMenu.h"
-#include "Location.h"
-#include "BackPack.h"
+//#include "Location.h"
+//#include "BackPack.h"
+#include "Game.h"
 
 
 
 // Homework DP 1 ----------------------------------------------------	
 
 
-//Task 1 Location
+//Task 1 TheGame with DesignPatterns
 void Task_1(std::string name_of_task)
 {	
-	do
+	Game new_game;
+	new_game.Initialize();
+	
+	
+	/*do
 	{		
 		system("cls");
 		std::cout << "***\t" << name_of_task << "\n";					
 	
-		//создаем локацию с от 30 до 100 рандомными деревьями		
-		TreeLocation Location_1;				
 		
-		//Получим категоризированную сводку по локации
-		std::cout << "\n--- Location_1.Info_categorized():\n";
-		Location_1.Info_categorized();
-		//Это  короткая сводка, вообще еще есть две по степени детализации:
-		//Location_1.Info(); // полная сводка по каждому дереву
-		//Location_1.ShowTrees(); // краткая сводка по каждому дереву
-						
-		
-		// Перебор деревьев
-
-		// Способ 1 - []
-		std::cout << "\n\n--- iterating through the elements []:\n";
-		for (int i = 0; i < Location_1.size(); ++i)
-			std::cout << Location_1[i].Get_Name() << " | ";
-
-		// Способ 2 - iterator
-		std::cout << "\n\n--- iterating through the iterator:\n";
-		for (auto iter = Location_1.begin(); iter != Location_1.end(); iter++)
-			std::cout << (*iter).Get_Name() << " | ";
-		
-		// Способ 2.1 - for-each
-		std::cout << "\n\n--- iterating through the ranged-based for loop:\n";
-		//for (auto iter : Location_1)
-		for (auto& iter : Location_1)
-			std::cout << iter.Get_Name() << " | ";
-
-
-		// Способ 3 - at()
-		std::cout << "\n\n--- iterating through the at():\n";
-			for (int i = 0; i < Location_1.size(); ++i)
-				std::cout << Location_1.at(i).Get_Name() << " | ";
-
-		//Сбор всех плодов в рюкзак
-		std::cout << "\n\n\n--- Harvesting all fruits from all trees in location\n";
-		BackPack temp_back_pack;
-		
-		for (auto iter = Location_1.begin(); iter != Location_1.end(); iter++)
-			while ((*iter).Get_fruits_remain())
-				temp_back_pack << *(*iter).Get_fruit();
-
-		// без ссылки не работает -> хочет экземпляры MotherPlant создавать, а он абстрактный
-		//* 
-		//for (auto iter : Location_1) 
-		for (auto& iter : Location_1) 
-		while (iter.Get_fruits_remain())
-			temp_back_pack << *(iter.Get_fruit());
-		//*/
-		
-		//Заглянем в рюкзак
-		std::cout << "\n\n--- temp_back_pack.ShortInfo():\n";
-		temp_back_pack.ShortInfo();
-		
-		//Осмотрим локацию
-		std::cout << "\n\n--- Location_1.Info_categorized():";
-		Location_1.Info_categorized();	
-			
-		//Удаление всех плодов одного типа
-		std::cout << "\n--- Delete all Pears:\n";
-		temp_back_pack.DeleteItem(Fruit::fruitTypes::Pear);
-				
-		std::cout << "\n\n--- ShortInfo():\n";
-		temp_back_pack.ShortInfo();
 
 		std::cout << "\n\nEsc - exit | any key to continue";
-	} while (_getch() != 27);
+	} while (_getch() != 27);*/
 }
 
 //Task 2 BackPack
@@ -210,10 +151,7 @@ int main()
 	//system("mode con cols=60 lines=40"); 
 	Main_menu MainMenu;	
 	MainMenu.AddElement("Design Patterns. Home Work 1: Creational patterns in My_Game_App (Plant, Fruit, BackPack, Loacation class world)");	// Homework name
-	MainMenu.AddElement("Location container class demo");
-	MainMenu.AddElement("BackPack container class demo");
-	MainMenu.AddElement("Fabric objects generation demo");
-
+	MainMenu.AddElement("Game: FruitHarvester (include AbstractFabric, Strategy design patterns");
 
 	do 
 	{		

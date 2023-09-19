@@ -7,9 +7,6 @@
 #include "BackPack.h"
 #include "PearTree.h"
 
-//#include "Fruit.h"
-
-
 
 
 class Location_Player_Interface
@@ -18,6 +15,7 @@ public:
 	virtual ~Location_Player_Interface() {}; // надо ли объявлять вирутальный деструктор при витруальном наследовании?
 	virtual void ShowTrees() = 0;
 	virtual void Get_fruit(int tree_index, BackPack_Player_Interface* back_pack) = 0;
+	virtual int chooseTree() = 0;
 };
 
 class Location_TheGame_Interface
@@ -34,6 +32,15 @@ class TreeLocation : virtual public Location_TheGame_Interface, virtual public L
 	int const TREES_MIN_RANDOM = 30; //по заданию 
 	int const TREES_MAX_RANDOM = 100;
 public:
+	/// C-tors ----------------------------------------------------------
+	TreeLocation(std::vector<MotherPlant::treeTypes> trees_list)
+	{
+		int trees_number = Get_Random(TREES_MIN_RANDOM, TREES_MAX_RANDOM);
+		for (int i = 0; i < trees_number; i++)
+		{
+			_plants_list.push_back(Get_Random_Tree(trees_list));
+		}
+	}
 	TreeLocation(int trees_number)
 	{
 		MotherPlant* new_tree = nullptr;
@@ -51,6 +58,16 @@ public:
 			_plants_list.push_back(Get_Random_Tree());
 		}
 	}
+	TreeLocation(MotherPlant::plant_size plant_size)
+	{
+		int trees_number = Get_Random(TREES_MIN_RANDOM, TREES_MAX_RANDOM);
+		for (int i = 0; i < trees_number; i++)
+		{
+			_plants_list.push_back(Get_Random_Tree(plant_size));
+		}
+	}
+	/// -----------------------------------------------------------------
+
 	~TreeLocation()
 	{
 		for (int i = 0; i < _plants_list.size(); i++)
@@ -58,11 +75,40 @@ public:
 		_plants_list.clear();
 	}
 
+	/// Object manage ---------------------------------------------------
 	MotherPlant* AddNewTree() override
 	{		
 		MotherPlant* new_tree = Get_Random_Tree();
 		_plants_list.push_back(new_tree);
 		return new_tree;
+	}
+	MotherPlant* Generate_Tree(MotherPlant::treeTypes tree_type, int tree_size, Color color_parametr, size_t max_fruits)
+	{		
+		switch (tree_type)
+		{
+		case MotherPlant::treeTypes::AppleTree:  return new AppleTree(tree_size, color_parametr, max_fruits);
+		case MotherPlant::treeTypes::Raspberrybush:  return new Raspberry_bush(tree_size, color_parametr, max_fruits);
+		case MotherPlant::treeTypes::PearTree:  return new PearTree(tree_size, color_parametr, max_fruits);
+		}
+		throw std::exception("Unknown tree type");
+	}
+	MotherPlant* Get_Random_Tree(std::vector<MotherPlant::treeTypes> trees_list)
+	{		
+		int tree_size = Get_Random(0, 3);
+		Color color_parametr = static_cast<Color>(Get_Random(0, int(Color::_end_of_enum_)));
+		size_t max_fruits = Get_Random(20 * (tree_size + 1), 50 * (tree_size + 1));
+		MotherPlant::treeTypes tree_type = trees_list[Get_Random(0, trees_list.size())];
+		
+		return Generate_Tree(tree_type, tree_size, color_parametr, max_fruits);
+	}
+	MotherPlant* Get_Random_Tree(MotherPlant::plant_size plant_size)
+	{
+		int tree_size = static_cast<int>(plant_size);
+		Color color_parametr = static_cast<Color>(Get_Random(0, int(Color::_end_of_enum_)));
+		size_t max_fruits = Get_Random(20 * (tree_size + 1), 50 * (tree_size + 1));
+		MotherPlant::treeTypes tree_type = static_cast<MotherPlant::treeTypes>(Get_Random(0, int(MotherPlant::treeTypes::_end_of_enum_)));
+
+		return Generate_Tree(tree_type, tree_size, color_parametr, max_fruits);
 	}
 	MotherPlant* Get_Random_Tree()
 	{
@@ -79,6 +125,7 @@ public:
 		}
 		return new_tree;
 	}
+
 	void DeleteTree() override
 	{
 		_plants_list.pop_back();
@@ -123,7 +170,6 @@ public:
 			++ingroup_count[_plants_list[i]->Get_Name()];
 			ingroup_fruits[_plants_list[i]->Get_Name()] += _plants_list[i]->Get_fruits_remain();
 			total_fruits += _plants_list[i]->Get_fruits_remain();
-
 		}
 		//выводим категорированную информацию о содержимом локации			
 		for (auto iter = ingroup_count.begin(); iter != ingroup_count.end(); iter++)
@@ -194,6 +240,11 @@ public:
 		return *_plants_list.at(index);
 	}
 	
-	
+	int chooseTree() override	
+	{
+		std::cout << "\nChoose tree [0 - exit]\n";
+		return Get_Int_Positive(0, _plants_list.size(), " Tree number out of range\n");
+	}
+	std::vector<MotherPlant*>& Get_plants_list() { return _plants_list; }
 
 };

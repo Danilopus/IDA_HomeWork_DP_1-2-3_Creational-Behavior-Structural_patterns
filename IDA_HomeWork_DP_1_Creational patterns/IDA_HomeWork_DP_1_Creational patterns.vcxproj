@@ -127,7 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="!___questions___.cpp" />
+    <ClCompile Include="CollectionStrategy.cpp" />
+    <ClCompile Include="CollectionStrategy_Pear.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="!_Main.cpp" />
     <ClCompile Include="Service functions.cpp" />
@@ -138,15 +139,29 @@
     <ClInclude Include="BackPack.h" />
     <ClInclude Include="Base_Fruit.h" />
     <ClInclude Include="Base_MotherPlant.h" />
+    <ClInclude Include="CollectionStrategy.h" />
+    <ClInclude Include="CollectionStrategy_Apple.h" />
+    <ClInclude Include="CollectionStrategy_Pear.h" />
     <ClInclude Include="Fruit.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Location.h" />
     <ClInclude Include="MotherPlant.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Pear.h" />
     <ClInclude Include="PearTree.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Raspberry_bush.h" />
     <ClInclude Include="Service functions.h" />
     <ClInclude Include="raspberry.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="WorldMaker.h" />
+    <ClInclude Include="WorldMaker_AppleOnly.h" />
+    <ClInclude Include="WorldMaker_Pear_and_Raspberry.h" />
+    <ClInclude Include="WorldMaker_tundra.h" />
+    <ClInclude Include="World_Player_Interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

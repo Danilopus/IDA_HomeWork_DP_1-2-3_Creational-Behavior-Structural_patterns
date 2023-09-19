@@ -26,9 +26,10 @@ public:
 
 class BackPack : virtual public BackPack_Player_Interface, virtual public BackPack_TheGame_Interface
 {
+	double _volume = 50; // ltr
+	double _max_weight = 50; // kg
 	//std::vector<std::unique_ptr<Fruit>> _items_list;
 	std::vector<Fruit*> _items_list;
-
 	// это закрытая функция, возможности стирать произволную строчку не будет, только через вызов с enum fruitTypes
 	void DeleteItem(std::string type)
 	{
@@ -43,6 +44,7 @@ class BackPack : virtual public BackPack_Player_Interface, virtual public BackPa
 			}
 		}
 	}
+
 public:
 
 	BackPack() {};

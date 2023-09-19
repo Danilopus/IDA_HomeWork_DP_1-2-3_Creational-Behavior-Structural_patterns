@@ -24,7 +24,10 @@
     <ClCompile Include="Service functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="!___questions___.cpp">
+    <ClCompile Include="CollectionStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectionStrategy_Pear.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,5 +74,43 @@
     <ClInclude Include="Pear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMaker_AppleOnly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMaker_Pear_and_Raspberry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMaker_tundra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World_Player_Interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectionStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectionStrategy_Apple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectionStrategy_Pear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
